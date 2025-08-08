@@ -846,8 +846,8 @@ body {
 @media (max-width: 768px) {
     .nav-menu {
         position: fixed;
-        left: -100%;
-        top: 65px; /* Ajustado para a altura do seu navbar */
+        left: -100%; /* Começa escondido fora da tela */
+        top: 65px; /* Altura do seu navbar */
         flex-direction: column;
         background-color: rgba(10, 10, 10, 0.98);
         width: 100%;
@@ -856,16 +856,23 @@ body {
         box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
         backdrop-filter: blur(10px);
         padding: 2rem 0;
+        z-index: 999; /* Garante que fique acima de outros elementos */
     }
-    
+
+    /* ESTA É A REGRA MAIS IMPORTANTE: Mostra o menu quando a classe .active é adicionada */
     .nav-menu.active {
-        left: 0;
+        left: 0; /* Move o menu para dentro da tela */
     }
     
     .nav-menu li {
         margin: 1.5rem 0;
     }
     
+    .hamburger {
+        display: flex; /* Garante que o botão hambúrguer seja visível */
+    }
+
+    /* Animação do botão hambúrguer para um 'X' */
     .hamburger.active .bar:nth-child(2) {
         opacity: 0;
     }
@@ -876,11 +883,6 @@ body {
     
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
-    }
-
-    .navbar.scrolled {
-        background: rgba(10, 10, 10, 0.98);
-        backdrop-filter: blur(15px);
     }
 }
 
