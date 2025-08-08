@@ -479,7 +479,13 @@
         </div>
     </footer>
 
-    <!-- JavaScript -->
+
+<div id="lightbox-modal" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div id="lightbox-caption"></div>
+    </div>
+
     <script src="js/script.js"></script>
 
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -487,63 +493,50 @@
       lucide.createIcons();
     </script>
 
-<div id="lightbox-modal" class="lightbox">
-    <span class="lightbox-close">&times;</span>
-    <img class="lightbox-content" id="lightbox-img">
-    <div id="lightbox-caption"></div>
-</div>
+    <script>
+        window.addEventListener('load', function() {
+            const modal = document.getElementById('lightbox-modal');
+            const modalImg = document.getElementById('lightbox-img');
+            const captionText = document.getElementById('lightbox-caption');
+            const imageLinks = document.querySelectorAll('.lightbox-trigger');
+            const closeBtn = document.querySelector('.lightbox-close');
 
-<script src="js/script.js"></script>
+            if (modal && modalImg && captionText && imageLinks.length > 0 && closeBtn) {
+                
+                imageLinks.forEach(link => {
+                    link.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        
+                        const imgElement = this.querySelector('img');
+                        if (imgElement) {
+                            modal.style.display = 'block';
+                            modalImg.src = this.href;
+                            captionText.innerHTML = imgElement.alt;
+                        }
+                    });
+                });
 
-<script src="https://unpkg.com/lucide@latest"></script>
-<script>
-  lucide.createIcons();
-</script>
+                const closeModal = () => {
+                    modal.style.display = 'none';
+                };
 
-<script>
-    window.addEventListener('load', function() {
-        const modal = document.getElementById('lightbox-modal');
-        const modalImg = document.getElementById('lightbox-img');
-        const captionText = document.getElementById('lightbox-caption');
-        const imageLinks = document.querySelectorAll('.lightbox-trigger');
-        const closeBtn = document.querySelector('.lightbox-close');
-
-        if (modal && modalImg && captionText && imageLinks.length > 0 && closeBtn) {
-            
-            imageLinks.forEach(link => {
-                link.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    
-                    const imgElement = this.querySelector('img');
-                    if (imgElement) {
-                        modal.style.display = 'block';
-                        modalImg.src = this.href;
-                        captionText.innerHTML = imgElement.alt;
+                closeBtn.addEventListener('click', closeModal);
+                
+                modal.addEventListener('click', function(e) {
+                    if (e.target === modal) {
+                        closeModal();
                     }
                 });
-            });
 
-            const closeModal = () => {
-                modal.style.display = 'none';
-            };
-
-            closeBtn.addEventListener('click', closeModal);
-            
-            modal.addEventListener('click', function(e) {
-                if (e.target === modal) {
-                    closeModal();
-                }
-            });
-
-            document.addEventListener('keydown', function(e) {
-                if (e.key === 'Escape' && modal.style.display === 'block') {
-                    closeModal();
-                }
-            });
-        }
-    });
-</script>
-    
+                document.addEventListener('keydown', function(e) {
+                    if (e.key === 'Escape' && modal.style.display === 'block') {
+                        closeModal();
+                    }
+                });
+            }
+        });
+    </script>
+        
 </body>
 </html>
 
