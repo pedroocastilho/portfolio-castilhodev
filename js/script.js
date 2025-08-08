@@ -222,8 +222,8 @@ document.addEventListener('DOMContentLoaded', () => {
 console.log(`
 🚀 Site desenvolvido por Pedro Castilho
 💻 Transformando ideias em realidade digital
-📧 Contato: pedro@castilho.dev
-🌐 WhatsApp: +55 (11) 99999-9999
+📧 Contato: contato@castilhodev.com.br
+🌐 WhatsApp: +55 (42) 98439-3938
 `);
 
 // Analytics tracking (placeholder)
