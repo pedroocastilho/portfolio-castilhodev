@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Castilho Dev - Desenvolvimento Web Profissional</title>
+    <meta name="description" content="Transformo a sua ideia de negócio numa realidade online. Crio sites profissionais para negócios locais crescerem.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.seusite.com/">
+    <meta property="og:title" content="Castilho Dev - Desenvolvimento Web Profissional">
+    <meta property="og:description" content="Desenvolvo plataformas web customizadas, <span class='no-break'>e-commerce</span> e sites de alta performance para negócios.">
+    <meta property="og:image" content="https://www.seusite.com/assets/og-image.jpg">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.seusite.com/">
+    <meta property="twitter:title" content="Castilho Dev - Desenvolvimento Web Profissional">
+    <meta property="twitter:description" content="Desenvolvo plataformas web customizadas, <span class='no-break'>e-commerce</span> e sites de alta performance para negócios.">
+    <meta property="twitter:image" content="https://www.seusite.com/assets/og-image.jpg">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link rel="icon" href="assets/favicon.ico" sizes="any">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+</head>
+<body>
+    <div id="aurora-background"></div>
+    <div class="layout-line line-left"></div>
+    <div class="layout-line line-right"></div>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="assets/semfundo4.png" alt="Logo Castilho Dev" class="logo-icon">
+                <span>Castilho Dev</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Início</a></li>
+                <li><a href="#about" class="nav-link">Sobre</a></li>
+                <li><a href="#work" class="nav-link">Trabalhos</a></li>
+                <li><a href="#services" class="nav-link">Serviços</a></li>
+                <li><a href="#pricing" class="nav-link">Preços</a></li>
+                <li><a href="#contact" class="nav-link">Contato</a></li>
+            </ul>
+            <div class="hamburger" role="button" aria-label="Abrir menu de navegação">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <canvas id="constellation-canvas"></canvas>
+            <div class="particles"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    O seu negócio, agora com resultados online.
+                </h1>
+                <p class="hero-description">
+                    Desde sites institucionais e lojas virtuais até plataformas web customizadas, eu construo as soluções digitais que o seu negócio precisa para crescer.
+                </p>
+                <a href="#contact" class="cta-button">
+                    <span>Receber Orçamento</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="assets/profile_picture.png" alt="Avatar de perfil de Castilho Dev, desenvolvedor web" class="profile-img">
+                    <div class="image-border"></div>
+                </div>
+                <div class="about-text">
+                    <h2 class="section-title">Sobre Mim</h2>
+                    <p class="about-description">
+                        Mais do que um desenvolvedor, sou um parceiro estratégico focado em transformar os seus objetivos de negócio na solução digital ideal. O meu processo é desenhado para construir a ferramenta certa para você, garantindo sempre a união de três pilares fundamentais: Performance, Design e Tecnologia.
+                    </p>
+                    <div class="about-pillars">
+                        <div class="pillar">
+                            <div class="pillar-icon">
+                                <i data-lucide="gauge-circle"></i>
+                            </div>
+                            <div class="pillar-text">
+                                <h4 class="pillar-title">Performance</h4>
+                                <p class="pillar-description">Sites rápidos e otimizados para a melhor experiência do usuário.</p>
+                            </div>
+                        </div>
+                        <div class="pillar">
+                            <div class="pillar-icon">
+                                <i data-lucide="palette"></i>
+                            </div>
+                            <div class="pillar-text">
+                                <h4 class="pillar-title">Design & UX</h4>
+                                <p class="pillar-description">Interfaces intuitivas e um design que valoriza a sua marca.</p>
+                            </div>
+                        </div>
+                        <div class="pillar">
+                            <div class="pillar-icon">
+                                <i data-lucide="layers"></i>
+                            </div>
+                            <div class="pillar-text">
+                                <h4 class="pillar-title">Tecnologia</h4>
+                                <p class="pillar-description">Código limpo e moderno, garantindo um projeto sólido e escalável.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="work" class="work">
+        <div class="container">
+            <h2 class="section-title text-center">Meu Trabalho</h2>
+            <p class="section-subtitle text-center">
+                Conheça alguns dos projetos que desenvolvi.
+            </p>
+            
+            <div class="work-featured">
+                
+                <div class="featured-project">
+                    <div class="project-info">
+                        <h3 class="project-title">La Decants - <span class="no-break">E-commerce</span> Completo</h3>
+                        <p class="project-description">
+                            Criei um <span class="no-break">e-commerce</span> completo para a La Decants, com foco em uma experiência de compra intuitiva e segura. O projeto incluiu desde o design até a implementação final do sistema.
+                        </p>
+                        <div class="project-features">
+                            <span class="feature-tag"><span class="no-break">E-commerce</span></span>
+                            <span class="feature-tag">Design Responsivo</span>
+                            <span class="feature-tag">Painel Gerenciável</span>
+                            <span class="feature-tag">Otimização SEO</span>
+                        </div>
+                        <ul class="project-functions-list">
+                            <li>Cálculo de frete automático</li>
+                            <li>Integração com Mercado Pago</li>
+                            <li>Área de cliente personalizada</li>
+                            <li>Design totalmente responsivo</li>
+                        </ul>
+                        <div class="project-result">
+                            <p><strong>Resultado Direto:</strong> Aumento de <span>+100%</span> nas vendas online.</p>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://ladecants.com.br" target="_blank" class="project-link">
+                                Ver Site ao Vivo
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18 13V19C18 19.5304 17.7893 20.0391 17.4142 20.4142C17.0391 20.7893 16.5304 21 16 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V8C3 7.46957 3.21071 6.96086 3.58579 6.58579C3.96086 6.21071 4.46957 6 5 6H11M15 3H21M21 3V9M21 3L9 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-gallery">
+                        <div class="gallery-item main">
+                            <a href="assets/la_decants_home.png" class="lightbox-trigger">
+                                <img src="assets/la_decants_home.png" alt="La Decants - Página Inicial" class="project-img">
+                            </a>
+                            <div class="gallery-overlay"><span>Página Inicial</span></div>
+                        </div>
+                        <div class="gallery-item">
+                            <a href="assets/la_decants_product.png" class="lightbox-trigger">
+                                <img src="assets/la_decants_product.png" alt="La Decants - Página do Produto" class="project-img">
+                            </a>
+                            <div class="gallery-overlay"><span>Página do Produto</span></div>
+                        </div>
+                        <div class="gallery-item">
+                            <a href="assets/la_decants_checkout.png" class="lightbox-trigger">
+                                <img src="assets/la_decants_checkout.png" alt="La Decants - Checkout" class="project-img">
+                            </a>
+                            <div class="gallery-overlay"><span>Checkout</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="featured-project">
+                    <div class="project-info">
+                        <h3 class="project-title">MediMentor - Plataforma de Estudos para Medicina</h3>
+                        <p class="project-description">
+                            Desenvolvi uma plataforma de e-learning completa e interativa, desenhada especificamente para auxiliar estudantes de medicina em sua jornada de estudos.
+                        </p>
+                        <div class="project-features">
+                            <span class="feature-tag">Plataforma E-Learning</span>
+                            <span class="feature-tag">Inteligência Artificial</span>
+                            <span class="feature-tag">Ferramentas de Produtividade</span>
+                            <span class="feature-tag">Gamificação</span>
+                        </div>
+                        <ul class="project-functions-list">
+                            <li>Dashboard com progresso de estudos</li>
+                            <li>Calendário de provas e aulas</li>
+                            <li>Banco de questões com feedback</li>
+                            <li>IA Mentora para tirar dúvidas</li>
+                        </ul>
+                    </div>
+                    <div class="project-gallery">
+                        <div class="gallery-item main">
+                            <a href="assets/medimentor_dashboard.png" class="lightbox-trigger">
+                                <img src="assets/medimentor_dashboard.png" alt="MediMentor - Dashboard Personalizado" class="project-img">
+                            </a>
+                            <div class="gallery-overlay"><span>Dashboard Personalizado</span></div>
+                        </div>
+                        <div class="gallery-item">
+                            <a href="assets/medimentor_calendario.png" class="lightbox-trigger">
+                                <img src="assets/medimentor_calendario.png" alt="MediMentor - Calendário Inteligente" class="project-img">
+                            </a>
+                            <div class="gallery-overlay"><span>Calendário Inteligente</span></div>
+                        </div>
+                        <div class="gallery-item">
+                            <a href="assets/medimentor_ia.png" class="lightbox-trigger">
+                                <img src="assets/medimentor_ia.png" alt="MediMentor - IA Mentora" class="project-img">
+                            </a>
+                            <div class="gallery-overlay"><span>IA Mentora Contextual</span></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title text-center">Serviços</h2>
+            <p class="section-subtitle text-center">
+                Soluções digitais desenhadas para o crescimento do seu negócio.
+            </p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i data-lucide="shopping-cart"></i>
+                    </div>
+                    <h3 class="service-title">Lojas Virtuais (<span class="no-break">E-commerce</span>)</h3>
+                    <p class="service-description">Transforme seu negócio em uma máquina de vendas online. Desenvolvo plataformas de <span class="no-break">e-commerce</span> robustas, seguras e com uma experiência de compra que fideliza clientes.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i data-lucide="monitor"></i>
+                    </div>
+                    <h3 class="service-title">Sites Institucionais</h3>
+                    <p class="service-description">Apresente a sua marca ao mundo com autoridade. Crio sites que são o centro da sua presença digital, construindo a confiança e a credibilidade que seu negócio merece.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i data-lucide="send"></i>
+                    </div>
+                    <h3 class="service-title">Landing Pages de Alta Conversão</h3>
+                    <p class="service-description">Páginas de aterrissagem desenhadas com um único objetivo: transformar visitantes em ações. Ideal para campanhas de marketing, lançamento de produtos ou captação de leads.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i data-lucide="layout-dashboard"></i>
+                    </div>
+                    <h3 class="service-title">Aplicações Web Customizadas</h3>
+                    <p class="service-description">
+                        Para além de sites, construo soluções de software completas para otimizar processos e criar novas ferramentas digitais para o seu negócio.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i data-lucide="rocket"></i>
+                    </div>
+                    <h3 class="service-title">Lojas Virtuais (Nuvemshop)</h3>
+                    <p class="service-description">
+                        A solução ideal para lançar seu <span class="no-break">e-commerce</span> de forma rápida e profissional. Cuido de toda a configuração e personalização para que a sua loja tenha uma aparência única e esteja pronta para vender desde o primeiro dia.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i data-lucide="gem"></i>
+                    </div>
+                    <h3 class="service-title">Identidade Visual & Branding</h3>
+                    <p class="service-description">
+                        Crio a base visual da sua marca para garantir uma presença profissional e coesa. Uma identidade forte é o primeiro passo para construir a confiança do seu cliente no mundo digital.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i data-lucide="shield-check"></i>
+                    </div>
+                    <h3 class="service-title">Manutenção & Evolução</h3>
+                    <p class="service-description">
+                        Uma parceria contínua para garantir que seu site esteja sempre seguro, rápido e atualizado. É a tranquilidade que você precisa para focar no seu negócio sem preocupações técnicas.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="services"> 
+        <div class="container">
+            <h2 class="section-title text-center">Planos e Preços</h2>
+            <p class="section-subtitle text-center">
+                Soluções transparentes e adaptadas ao tamanho do seu desafio.
+            </p>
+            
+            <div class="pricing-grid">
+
+                <div class="price-card">
+                    <div class="price-header">
+                        <h3 class="price-title">Landing Pages</h3>
+                        <p class="price-range">R$ 750 a R$ 5.000</p>
+                    </div>
+                    <p class="price-description">Planos desenhados para páginas de alta conversão, seja para um lançamento rápido ou um projeto com integrações avançadas.</p>
+                    <ul class="price-features">
+                        <li>Design Profissional e Responsivo</li>
+                        <li>Foco Total em Call-to-Action</li>
+                        <li>Integração com Ferramentas de Marketing</li>
+                        <li>Testes A/B e Animações</li>
+                    </ul>
+                    <a href="#contact" class="price-cta">Consultar Planos</a>
+                </div>
+
+                <div class="price-card">
+                    <div class="price-header">
+                        <h3 class="price-title">Sites Institucionais</h3>
+                        <p class="price-range">R$ 1.500 a R$ 10.000</p>
+                    </div>
+                    <p class="price-description">Para negócios que precisam de uma presença digital sólida, desde um site de apresentação até um portal corporativo completo.</p>
+                    <ul class="price-features">
+                        <li>Até 5 páginas (Home, Sobre, etc.)</li>
+                        <li>Design limpo e 100% responsivo</li>
+                        <li>Sistema de blog completo</li>
+                        <li>Integrações com sistemas de agendamento</li>
+                    </ul>
+                    <a href="#contact" class="price-cta">Consultar Planos</a>
+                </div>
+
+                <div class="price-card popular"> 
+                    <div class="price-header">
+                        <h3 class="price-title">Lojas Virtuais</h3>
+                        <p class="price-range">R$ 3.000 a R$ 20.000</p>
+                    </div>
+                    <p class="price-description">Para negócios que querem vender online, desde um pequeno catálogo de produtos até uma operação de <span class="no-break">e-commerce</span> robusta.</p>
+                    <ul class="price-features">
+                        <li>Catálogo de produtos completo</li>
+                        <li>Checkout otimizado (Mercado Pago, etc.)</li>
+                        <li>Integrações com sistemas de stock (ERP)</li>
+                        <li>Design e funcionalidades customizadas</li>
+                    </ul>
+                    <a href="#contact" class="price-cta">Solicitar Orçamento</a>
+                </div>
+
+                <div class="price-card">
+                    <div class="price-header">
+                        <h3 class="price-title">Aplicações Customizadas</h3>
+                        <p class="price-range">Sob Consulta</p>
+                    </div>
+                    <p class="price-description">Para startups e empresas com necessidades de software sob medida, como sistemas internos, plataformas e ferramentas de produtividade.</p>
+                    <ul class="price-features">
+                        <li>Soluções de software completas</li>
+                        <li>Sistemas de Login e Dashboards</li>
+                        <li>Automação de processos de negócio</li>
+                        <li>Integração com IA e outras APIs</li>
+                    </ul>
+                    <a href="#contact" class="price-cta">Solicitar Orçamento</a>
+                </div>
+                
+                <div class="price-card">
+                    <div class="price-header">
+                        <h3 class="price-title">Lojas Virtuais (Nuvemshop)</h3>
+                        <p class="price-range">R$ 600 a R$ 2.500</p>
+                    </div>
+                    <p class="price-description">Planos desenhados para montar sua loja na plataforma Nuvemshop, seja para um lançamento rápido ou para um projeto com design customizado.</p>
+                    <ul class="price-features">
+                        <li>Aplicação da sua Identidade Visual</li>
+                        <li>Design de Banners Rotativos</li>
+                        <li>Customização Avançada do Layout (CSS)</li>
+                        <li>Treinamento para Gestão da Loja</li>
+                    </ul>
+                    <a href="#contact" class="price-cta">Consultar Planos</a>
+                </div>
+                
+                <div class="price-card">
+                    <div class="price-header">
+                        <h3 class="price-title">Identidade Visual & Branding</h3>
+                        <p class="price-range">A partir de R$ 750</p>
+                    </div>
+                    <p class="price-description">Pacotes completos para criar ou renovar a identidade visual do seu negócio, garantindo uma marca memorável e profissional.</p>
+                    <ul class="price-features">
+                        <li>Design de Logotipo Profissional</li>
+                        <li>Definição da Paleta de Cores</li>
+                        <li>Seleção de Tipografia da Marca</li>
+                        <li>Manual de Marca Simplificado (PDF)</li>
+                    </ul>
+                    <a href="#contact" class="price-cta">Consultar Planos</a>
+                </div>
+                
+                <div class="price-card">
+                    <div class="price-header">
+                        <h3 class="price-title">Manutenção & Evolução</h3>
+                        <p class="price-range">R$ 300 a R$ 1.500 / mês</p>
+                    </div>
+                    <p class="price-description">Planos mensais para garantir a saúde e a performance contínua do seu site, com diferentes níveis de suporte para a sua necessidade.</p>
+                    <ul class="price-features">
+                        <li>Backups e atualizações de segurança</li>
+                        <li>Monitoramento de performance 24/7</li>
+                        <li>Suporte técnico prioritário</li>
+                        <li>Banco de horas para alterações</li>
+                    </ul>
+                    <a href="#contact" class="price-cta">Consultar Planos</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2 class="section-title">Pronto para iniciar seu próximo projeto?</h2>
+                    <p class="contact-description">
+                        Estou disponível para entender suas necessidades e propor uma solução digital que traga resultados. Envie uma mensagem e vamos agendar uma chamada.
+                    </p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21 15.46L15.73 14.93C15.65 14.92 15.58 14.92 15.5 14.93C15.3 14.95 15.12 15.05 15 15.18L12.71 17.47C10.61 16.41 8.59 14.4 7.53 12.29L9.82 10C9.95 9.88 10.05 9.7 10.07 9.5C10.08 9.42 10.08 9.35 10.07 9.27L9.54 4C9.5 3.45 9.05 3 8.5 3H4C3.45 3 3 3.45 3 4C3 13.39 10.61 21 20 21C20.55 21 21 20.55 21 20V15.5C21 15.45 21 15.46 21 15.46Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="method-info">
+                                <span class="method-label">WhatsApp</span>
+                                <span class="method-value">+55 (42) 98439-3938</span>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="method-info">
+                                <span class="method-label">Email</span>
+                                <span class="method-value">pcastilhodev@gmail.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-cta">
+                    <a href="https://wa.me/5542984393938?text=Olá Pedro! Gostaria de conversar sobre um projeto." target="_blank" class="whatsapp-button">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.465 3.488" fill="currentColor"/>
+                        </svg>
+                        <span>Agendar uma conversa via WhatsApp</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Castilho Dev. Todos os direitos reservados.</p>
+                <p>Desenvolvimento web focado em resultados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+
+<div id="lightbox-modal" class="lightbox">
+    <span class="lightbox-close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+    <div id="lightbox-caption"></div>
+</div>
+
+<script src="js/script.js"></script>
+
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+  lucide.createIcons();
+</script>
+
+<script>
+    window.addEventListener('load', function() {
+        const modal = document.getElementById('lightbox-modal');
+        const modalImg = document.getElementById('lightbox-img');
+        const captionText = document.getElementById('lightbox-caption');
+        const imageLinks = document.querySelectorAll('.lightbox-trigger');
+        const closeBtn = document.querySelector('.lightbox-close');
+
+        if (modal && modalImg && captionText && imageLinks.length > 0 && closeBtn) {
+            
+            imageLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const imgElement = this.querySelector('img');
+                    if (imgElement) {
+                        modal.style.display = 'block';
+                        modalImg.src = this.href;
+                        captionText.innerHTML = imgElement.alt;
+                    }
+                });
+            });
+
+            const closeModal = () => {
+                modal.style.display = 'none';
+            };
+
+            closeBtn.addEventListener('click', closeModal);
+            
+            modal.addEventListener('click', function(e) {
+                if (e.target === modal) {
+                    closeModal();
+                }
+            });
+
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && modal.style.display === 'block') {
+                    closeModal();
+                }
+            });
+        }
+    });
+</script>
+    
+</body>
+</html>
+
